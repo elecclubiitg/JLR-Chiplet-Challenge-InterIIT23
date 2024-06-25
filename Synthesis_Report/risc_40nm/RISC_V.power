@@ -1,0 +1,183 @@
+Loading db file '/home/birjit/UMC40/fsh0l_brs/2018Q2v1.2/GENERIC_CORE/FrontEnd/synopsys/ccsn/fsh0l_brs_generic_core_ss1p1v125c.ccsndb'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+        -verbose
+Design : RISC_V
+Version: O-2018.06-SP1
+Date   : Sun Dec 10 23:51:38 2023
+****************************************
+
+
+Library(s) Used:
+
+    fsh0l_brs_generic_core_ss1p1v125c (File: /home/birjit/UMC40/fsh0l_brs/2018Q2v1.2/GENERIC_CORE/FrontEnd/synopsys/ccsn/fsh0l_brs_generic_core_ss1p1v125c.ccsndb)
+
+
+Operating Conditions: ss1p1v125c   Library: fsh0l_brs_generic_core_ss1p1v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RISC_V                 enG50K            fsh0l_brs_generic_core_ss1p1v125c
+Branch_unit            G5K               fsh0l_brs_generic_core_ss1p1v125c
+alu                    G5K               fsh0l_brs_generic_core_ss1p1v125c
+decoder                G5K               fsh0l_brs_generic_core_ss1p1v125c
+imm_generator          G5K               fsh0l_brs_generic_core_ss1p1v125c
+immediate_adder        G5K               fsh0l_brs_generic_core_ss1p1v125c
+instruction_mux        G5K               fsh0l_brs_generic_core_ss1p1v125c
+load_unit              G5K               fsh0l_brs_generic_core_ss1p1v125c
+msrv32_csr_file        G10K              fsh0l_brs_generic_core_ss1p1v125c
+pc                     G5K               fsh0l_brs_generic_core_ss1p1v125c
+reg_block_1            G5K               fsh0l_brs_generic_core_ss1p1v125c
+reg_block_2_revised_2  G5K               fsh0l_brs_generic_core_ss1p1v125c
+store_unit             G5K               fsh0l_brs_generic_core_ss1p1v125c
+wb_mux_sel_unit        G5K               fsh0l_brs_generic_core_ss1p1v125c
+wr_en_generator        G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlconstant_0_0  G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlconstant_0_1  G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlslice_0_0     G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlslice_1_0     G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlslice_2_0     G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlslice_3_0     G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlslice_4_0     G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlslice_5_0     G5K               fsh0l_brs_generic_core_ss1p1v125c
+RISC_V_xlslice_6_1     G5K               fsh0l_brs_generic_core_ss1p1v125c
+data_wr_mux_unit       G5K               fsh0l_brs_generic_core_ss1p1v125c
+csr_data_mux_unit      G5K               fsh0l_brs_generic_core_ss1p1v125c
+mstatus_reg            G5K               fsh0l_brs_generic_core_ss1p1v125c
+misa_and_pre_data      G5K               fsh0l_brs_generic_core_ss1p1v125c
+mie_reg                G5K               fsh0l_brs_generic_core_ss1p1v125c
+mtvec_reg              G5K               fsh0l_brs_generic_core_ss1p1v125c
+mepc_and_mscratch_reg  G5K               fsh0l_brs_generic_core_ss1p1v125c
+mcause_reg             G5K               fsh0l_brs_generic_core_ss1p1v125c
+mip_reg                G5K               fsh0l_brs_generic_core_ss1p1v125c
+mtval_reg              G5K               fsh0l_brs_generic_core_ss1p1v125c
+machine_counter_setup  G5K               fsh0l_brs_generic_core_ss1p1v125c
+machine_counter        G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlconstant_v1_1_6_xlconstant_00000001_1
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlconstant_v1_1_6_xlconstant_00000000_1
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlslice_v1_0_2_xlslice_DIN_WIDTH3_DIN_FROM1_DIN_TO0
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM6_DIN_TO2_1
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM4_DIN_TO0
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM1_DIN_TO0_1
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM5_DIN_TO5
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM6_DIN_TO2_0
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM1_DIN_TO0_0
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+pc_DW01_add_0          G5K               fsh0l_brs_generic_core_ss1p1v125c
+machine_counter_DW01_add_0
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+machine_counter_DW01_add_1
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+machine_counter_DW01_inc_0
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+machine_counter_DW01_inc_1
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+machine_counter_DW01_inc_2
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+immediate_adder_DW01_add_0
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+immediate_adder_DW01_add_1
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+alu_DW_cmp_0           G5K               fsh0l_brs_generic_core_ss1p1v125c
+alu_DW01_add_0         G5K               fsh0l_brs_generic_core_ss1p1v125c
+alu_DW01_sub_0         G5K               fsh0l_brs_generic_core_ss1p1v125c
+Branch_unit_DW01_sub_0 G5K               fsh0l_brs_generic_core_ss1p1v125c
+mtvec_reg_DW01_add_0   G5K               fsh0l_brs_generic_core_ss1p1v125c
+machine_counter_DW01_add_2
+                       G5K               fsh0l_brs_generic_core_ss1p1v125c
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+RISC_V                                 1.98e-02    0.116 8.70e+06    0.145 100.0
+  xlslice_6 (RISC_V_xlslice_6_1)       2.49e-06 4.53e-06 1.64e+03 8.65e-06   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM5_DIN_TO5)
+                                       2.49e-06 4.53e-06 1.64e+03 8.65e-06   0.0
+  xlslice_5 (RISC_V_xlslice_5_0)       3.99e-05 8.56e-06 3.33e+03 5.17e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM1_DIN_TO0_0)
+                                       3.99e-05 8.56e-06 3.33e+03 5.17e-05   0.0
+  xlslice_4 (RISC_V_xlslice_4_0)       1.41e-05 1.72e-05 3.32e+03 3.46e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM1_DIN_TO0_1)
+                                       1.41e-05 1.72e-05 3.32e+03 3.46e-05   0.0
+  xlslice_3 (RISC_V_xlslice_3_0)       9.42e-06 1.77e-05 8.29e+03 3.54e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM4_DIN_TO0)
+                                       9.42e-06 1.77e-05 8.29e+03 3.54e-05   0.0
+  xlslice_2 (RISC_V_xlslice_2_0)          0.000    0.000    0.000    0.000   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM6_DIN_TO2_0)
+                                          0.000    0.000    0.000    0.000   0.0
+  xlslice_1 (RISC_V_xlslice_1_0)       1.94e-05 2.30e-05 8.20e+03 5.06e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM6_DIN_TO2_1)
+                                       1.94e-05 2.30e-05 8.20e+03 5.06e-05   0.0
+  xlslice_0 (RISC_V_xlslice_0_0)       1.40e-05 9.44e-06 3.28e+03 2.67e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH3_DIN_FROM1_DIN_TO0)
+                                       1.40e-05 9.44e-06 3.28e+03 2.67e-05   0.0
+  xlconstant_1 (RISC_V_xlconstant_0_1) 4.59e-06 1.89e-06 3.09e+03 9.57e-06   0.0
+    inst (xlconstant_v1_1_6_xlconstant_00000000_1)
+                                          0.000    0.000 1.55e+03 1.55e-06   0.0
+  xlconstant_0 (RISC_V_xlconstant_0_0)    0.000    0.000 1.77e+03 1.77e-06   0.0
+    inst (xlconstant_v1_1_6_xlconstant_00000001_1)
+                                          0.000    0.000  887.040 8.87e-07   0.0
+  wr_en_generator_0 (wr_en_generator)  3.13e-06 3.52e-06 2.44e+03 9.10e-06   0.0
+  wb_mux_sel_unit_0 (wb_mux_sel_unit)  7.92e-04 3.69e-04 1.40e+05 1.30e-03   0.9
+  store_unit_0 (store_unit)            5.38e-04 5.57e-04 1.51e+05 1.25e-03   0.9
+  reg_block_2_revised_2_0 (reg_block_2_revised_2)
+                                       6.96e-04 4.79e-02 5.83e+05 4.92e-02  34.0
+  reg_block_1_0 (reg_block_1)          9.10e-05 5.01e-03 6.16e+04 5.16e-03   3.6
+  pc_0 (pc)                            5.63e-04 2.67e-04 5.74e+05 1.40e-03   1.0
+    r295 (pc_DW01_add_0)               2.84e-05 3.03e-05 1.83e+05 2.41e-04   0.2
+  msrv32_csr_file_0 (msrv32_csr_file)  2.44e-03 5.36e-02 4.57e+06 6.06e-02  41.9
+    MC (machine_counter)               7.90e-04 2.87e-02 2.79e+06 3.23e-02  22.3
+    MCS (machine_counter_setup)        4.75e-06 2.92e-04 1.17e+04 3.09e-04   0.2
+    MTVAL_REG (mtval_reg)              1.75e-04 4.73e-03 8.94e+04 4.99e-03   3.5
+    MIP_REG (mip_reg)                  1.56e-05 4.77e-04 5.58e+04 5.48e-04   0.4
+    MCAUSE_REG (mcause_reg)            9.30e-05 4.58e-03 9.28e+04 4.77e-03   3.3
+    MM_REG (mepc_and_mscratch_reg)     1.94e-04 9.16e-03 2.28e+05 9.58e-03   6.6
+    MTVEC_REG (mtvec_reg)              5.54e-05 4.55e-03 2.75e+05 4.88e-03   3.4
+    MIE_REG (mie_reg)                  2.70e-05 4.70e-04 6.36e+04 5.60e-04   0.4
+    MPD (misa_and_pre_data)            6.54e-05 7.75e-05 9.90e+04 2.42e-04   0.2
+    MS (mstatus_reg)                   3.61e-05 3.22e-04 6.81e+04 4.26e-04   0.3
+    CDMU (csr_data_mux_unit)           7.68e-05 2.76e-05 6.30e+05 7.35e-04   0.5
+    DRMU (data_wr_mux_unit)            7.05e-04 1.26e-04 1.43e+05 9.74e-04   0.7
+  load_unit_0 (load_unit)              4.15e-04 3.13e-04 1.31e+05 8.59e-04   0.6
+  instruction_mux_0 (instruction_mux)  3.16e-04 2.76e-04 1.14e+05 7.06e-04   0.5
+  immediate_adder_0 (immediate_adder)  9.95e-04 2.32e-03 3.93e+05 3.71e-03   2.6
+    add_536 (immediate_adder_DW01_add_1)
+                                       2.48e-04 1.33e-03 1.90e+05 1.77e-03   1.2
+    add_536_2 (immediate_adder_DW01_add_0)
+                                       1.14e-04 7.18e-04 1.84e+05 1.02e-03   0.7
+  imm_generator_0 (imm_generator)      7.50e-04 1.59e-04 4.70e+04 9.56e-04   0.7
+  decoder_0 (decoder)                  2.33e-04 1.71e-04 7.72e+04 4.82e-04   0.3
+  alu_0 (alu)                          3.00e-03 4.03e-03 1.51e+06 8.55e-03   5.9
+    r307 (alu_DW01_sub_0)              2.44e-04 8.49e-04 2.29e+05 1.32e-03   0.9
+    r308 (alu_DW01_add_0)              1.48e-04 7.98e-04 1.92e+05 1.14e-03   0.8
+    lt_422 (alu_DW_cmp_0)              1.88e-04 1.90e-04 8.08e+04 4.59e-04   0.3
+  Branch_unit_0 (Branch_unit)          6.06e-04 1.04e-03 3.07e+05 1.95e-03   1.3
+    sub_387 (Branch_unit_DW01_sub_0)   2.51e-04 3.06e-04 5.99e+04 6.17e-04   0.4
+1

@@ -1,0 +1,108 @@
+Loading db file '/home/birjit/UMC65/UMK65LSCLLMVBBR_B03_TAPEOUTKIT/synopsys/uk65lscllmvbbr_108c125_wc.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+        -verbose
+Design : RISC_V
+Version: O-2018.06-SP1
+Date   : Sun Dec 10 23:44:46 2023
+****************************************
+
+
+Library(s) Used:
+
+    uk65lscllmvbbr_108c125_wc (File: /home/birjit/UMC65/UMK65LSCLLMVBBR_B03_TAPEOUTKIT/synopsys/uk65lscllmvbbr_108c125_wc.db)
+
+
+Operating Conditions: uk65lscllmvbbr_108c125_wc   Library: uk65lscllmvbbr_108c125_wc
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RISC_V                 wl0               uk65lscllmvbbr_108c125_wc
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+RISC_V                                 1.56e-02 7.95e-02 5.46e+06    0.101 100.0
+  xlslice_6 (RISC_V_xlslice_6_1)       1.27e-06 2.41e-06  626.973 4.30e-06   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM5_DIN_TO5)
+                                       1.27e-06 2.41e-06  626.973 4.30e-06   0.0
+  xlslice_5 (RISC_V_xlslice_5_0)       1.50e-05 5.19e-06 1.28e+03 2.15e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM1_DIN_TO0_0)
+                                       1.50e-05 5.19e-06 1.28e+03 2.15e-05   0.0
+  xlslice_4 (RISC_V_xlslice_4_0)       6.96e-06 9.54e-06 1.28e+03 1.78e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM1_DIN_TO0_1)
+                                       6.96e-06 9.54e-06 1.28e+03 1.78e-05   0.0
+  xlslice_3 (RISC_V_xlslice_3_0)       3.85e-06 9.80e-06 3.19e+03 1.68e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM4_DIN_TO0)
+                                       3.85e-06 9.80e-06 3.19e+03 1.68e-05   0.0
+  xlslice_2 (RISC_V_xlslice_2_0)          0.000    0.000    0.000    0.000   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM6_DIN_TO2_0)
+                                          0.000    0.000    0.000    0.000   0.0
+  xlslice_1 (RISC_V_xlslice_1_0)       7.21e-06 1.20e-05 3.13e+03 2.23e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM6_DIN_TO2_1)
+                                       7.21e-06 1.20e-05 3.13e+03 2.23e-05   0.0
+  xlslice_0 (RISC_V_xlslice_0_0)       6.02e-06 4.79e-06 1.25e+03 1.21e-05   0.0
+    inst (xlslice_v1_0_2_xlslice_DIN_WIDTH3_DIN_FROM1_DIN_TO0)
+                                       6.02e-06 4.79e-06 1.25e+03 1.21e-05   0.0
+  xlconstant_1 (RISC_V_xlconstant_0_1) 8.09e-07 1.22e-06 1.08e+03 3.10e-06   0.0
+    inst (xlconstant_v1_1_6_xlconstant_00000000_1)
+                                          0.000    0.000  538.784 5.39e-07   0.0
+  xlconstant_0 (RISC_V_xlconstant_0_0)    0.000    0.000  688.281 6.88e-07   0.0
+    inst (xlconstant_v1_1_6_xlconstant_00000001_1)
+                                          0.000    0.000  344.141 3.44e-07   0.0
+  wr_en_generator_0 (wr_en_generator)  7.82e-07 3.96e-06  974.124 5.72e-06   0.0
+  wb_mux_sel_unit_0 (wb_mux_sel_unit)  3.21e-04 3.54e-04 9.67e+04 7.71e-04   0.8
+  store_unit_0 (store_unit)            2.78e-04 3.86e-04 6.88e+04 7.33e-04   0.7
+  reg_block_2_revised_2_0 (reg_block_2_revised_2)
+                                       1.16e-03 3.22e-02 8.77e+05 3.43e-02  34.1
+  reg_block_1_0 (reg_block_1)          9.51e-05 3.28e-03 9.74e+04 3.47e-03   3.5
+  pc_0 (pc)                            2.54e-04 1.84e-04 1.84e+05 6.22e-04   0.6
+    r295 (pc_DW01_add_0)               1.37e-05 2.63e-05 8.94e+04 1.29e-04   0.1
+  msrv32_csr_file_0 (msrv32_csr_file)  1.32e-03 3.76e-02 2.87e+06 4.18e-02  41.5
+    MC (machine_counter)               5.52e-04 2.00e-02 1.91e+06 2.25e-02  22.3
+    MCS (machine_counter_setup)        2.50e-06 2.05e-04 9.06e+03 2.17e-04   0.2
+    MTVAL_REG (mtval_reg)              1.03e-04 3.40e-03 1.12e+05 3.61e-03   3.6
+    MIP_REG (mip_reg)                  7.19e-06 3.37e-04 2.46e+04 3.69e-04   0.4
+    MCAUSE_REG (mcause_reg)            4.56e-05 3.24e-03 1.05e+05 3.39e-03   3.4
+    MM_REG (mepc_and_mscratch_reg)     1.07e-04 6.43e-03 2.32e+05 6.77e-03   6.7
+    MTVEC_REG (mtvec_reg)              2.49e-05 3.18e-03 1.91e+05 3.40e-03   3.4
+    MIE_REG (mie_reg)                  1.29e-05 3.47e-04 2.94e+04 3.89e-04   0.4
+    MPD (misa_and_pre_data)            4.46e-05 6.76e-05 3.82e+04 1.50e-04   0.1
+    MS (mstatus_reg)                   1.65e-05 2.35e-04 2.80e+04 2.79e-04   0.3
+    CDMU (csr_data_mux_unit)           4.47e-05 3.28e-05 1.42e+05 2.20e-04   0.2
+    DRMU (data_wr_mux_unit)            3.31e-04 1.08e-04 4.15e+04 4.81e-04   0.5
+  load_unit_0 (load_unit)              2.59e-04 2.80e-04 6.31e+04 6.01e-04   0.6
+  instruction_mux_0 (instruction_mux)  9.21e-05 1.96e-04 4.41e+04 3.32e-04   0.3
+  immediate_adder_0 (immediate_adder)  4.81e-04 1.02e-03 1.72e+05 1.67e-03   1.7
+    add_536 (immediate_adder_DW01_add_1)
+                                       1.84e-04 5.07e-04 7.78e+04 7.69e-04   0.8
+    add_536_2 (immediate_adder_DW01_add_0)
+                                       8.51e-05 3.04e-04 7.23e+04 4.61e-04   0.5
+  imm_generator_0 (imm_generator)      4.55e-04 1.38e-04 2.96e+04 6.22e-04   0.6
+  decoder_0 (decoder)                  1.23e-04 1.15e-04 3.44e+04 2.73e-04   0.3
+  alu_0 (alu)                          1.76e-03 2.70e-03 7.50e+05 5.21e-03   5.2
+    r307 (alu_DW01_sub_0)              2.14e-04 3.37e-04 9.23e+04 6.44e-04   0.6
+    r308 (alu_DW01_add_0)              1.14e-04 3.06e-04 7.79e+04 4.98e-04   0.5
+    lt_422 (alu_DW_cmp_0)              1.19e-04 1.68e-04 4.72e+04 3.34e-04   0.3
+  Branch_unit_0 (Branch_unit)          3.72e-04 1.01e-03 1.60e+05 1.54e-03   1.5
+    sub_387 (Branch_unit_DW01_sub_0)   1.43e-04 2.85e-04 3.71e+04 4.65e-04   0.5
+1

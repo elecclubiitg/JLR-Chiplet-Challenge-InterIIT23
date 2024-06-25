@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : area
+Design : design_1
+Version: O-2018.06-SP1
+Date   : Thu Dec 14 09:42:50 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    uk65lscllmvbbr_108c125_wc (File: /home/birjit/UMC65/UMK65LSCLLMVBBR_B03_TAPEOUTKIT/synopsys/uk65lscllmvbbr_108c125_wc.db)
+
+Number of ports:                         3253
+Number of nets:                          8817
+Number of cells:                         5356
+Number of combinational cells:           4936
+Number of sequential cells:               368
+Number of macros/black boxes:               0
+Number of buf/inv:                        684
+Number of references:                       8
+
+Combinational area:              15585.120063
+Buf/Inv area:                      738.720029
+Noncombinational area:            2244.960049
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 17830.080112
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ----------------------
+design_1                          17830.0801    100.0      0.0000     0.0000  0.0000  design_1
+neuron_0                           3676.6800     20.6    670.6800   444.9600  0.0000  neuron_3
+neuron_0/add_289                     72.0000      0.4     72.0000     0.0000  0.0000  neuron_3_DW01_add_1
+neuron_0/add_366                     72.0000      0.4     72.0000     0.0000  0.0000  neuron_3_DW01_add_0
+neuron_0/mult_357                  1421.2800      8.0   1421.2800     0.0000  0.0000  neuron_3_DW_mult_uns_0
+neuron_0/r363                       134.2800      0.8    134.2800     0.0000  0.0000  neuron_3_DW01_cmp6_1
+neuron_0/r364                       110.1600      0.6    110.1600     0.0000  0.0000  neuron_3_DW01_add_3
+neuron_0/r365                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_3_DW01_sub_3
+neuron_0/r366                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_3_DW01_sub_2
+neuron_0/r369                       134.2800      0.8    134.2800     0.0000  0.0000  neuron_3_DW01_cmp6_0
+neuron_0/r370                       110.1600      0.6    110.1600     0.0000  0.0000  neuron_3_DW01_add_2
+neuron_0/r371                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_3_DW01_sub_1
+neuron_0/r372                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_3_DW01_sub_0
+neuron_1                           3676.6800     20.6    670.6800   444.9600  0.0000  neuron_2
+neuron_1/add_289                     72.0000      0.4     72.0000     0.0000  0.0000  neuron_2_DW01_add_1
+neuron_1/add_366                     72.0000      0.4     72.0000     0.0000  0.0000  neuron_2_DW01_add_0
+neuron_1/mult_357                  1421.2800      8.0   1421.2800     0.0000  0.0000  neuron_2_DW_mult_uns_0
+neuron_1/r363                       134.2800      0.8    134.2800     0.0000  0.0000  neuron_2_DW01_cmp6_1
+neuron_1/r364                       110.1600      0.6    110.1600     0.0000  0.0000  neuron_2_DW01_add_3
+neuron_1/r365                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_2_DW01_sub_3
+neuron_1/r366                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_2_DW01_sub_2
+neuron_1/r369                       134.2800      0.8    134.2800     0.0000  0.0000  neuron_2_DW01_cmp6_0
+neuron_1/r370                       110.1600      0.6    110.1600     0.0000  0.0000  neuron_2_DW01_add_2
+neuron_1/r371                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_2_DW01_sub_1
+neuron_1/r372                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_2_DW01_sub_0
+neuron_2                           3676.6800     20.6    670.6800   444.9600  0.0000  neuron_1
+neuron_2/add_289                     72.0000      0.4     72.0000     0.0000  0.0000  neuron_1_DW01_add_1
+neuron_2/add_366                     72.0000      0.4     72.0000     0.0000  0.0000  neuron_1_DW01_add_0
+neuron_2/mult_357                  1421.2800      8.0   1421.2800     0.0000  0.0000  neuron_1_DW_mult_uns_0
+neuron_2/r363                       134.2800      0.8    134.2800     0.0000  0.0000  neuron_1_DW01_cmp6_1
+neuron_2/r364                       110.1600      0.6    110.1600     0.0000  0.0000  neuron_1_DW01_add_3
+neuron_2/r365                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_1_DW01_sub_3
+neuron_2/r366                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_1_DW01_sub_2
+neuron_2/r369                       134.2800      0.8    134.2800     0.0000  0.0000  neuron_1_DW01_cmp6_0
+neuron_2/r370                       110.1600      0.6    110.1600     0.0000  0.0000  neuron_1_DW01_add_2
+neuron_2/r371                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_1_DW01_sub_1
+neuron_2/r372                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_1_DW01_sub_0
+neuron_3                           3676.6800     20.6    670.6800   444.9600  0.0000  neuron_0
+neuron_3/add_289                     72.0000      0.4     72.0000     0.0000  0.0000  neuron_0_DW01_add_1
+neuron_3/add_366                     72.0000      0.4     72.0000     0.0000  0.0000  neuron_0_DW01_add_0
+neuron_3/mult_357                  1421.2800      8.0   1421.2800     0.0000  0.0000  neuron_0_DW_mult_uns_0
+neuron_3/r363                       134.2800      0.8    134.2800     0.0000  0.0000  neuron_0_DW01_cmp6_1
+neuron_3/r364                       110.1600      0.6    110.1600     0.0000  0.0000  neuron_0_DW01_add_3
+neuron_3/r365                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_0_DW01_sub_3
+neuron_3/r366                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_0_DW01_sub_2
+neuron_3/r369                       134.2800      0.8    134.2800     0.0000  0.0000  neuron_0_DW01_cmp6_0
+neuron_3/r370                       110.1600      0.6    110.1600     0.0000  0.0000  neuron_0_DW01_add_2
+neuron_3/r371                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_0_DW01_sub_1
+neuron_3/r372                       126.7200      0.7    126.7200     0.0000  0.0000  neuron_0_DW01_sub_0
+pooling_0                           780.8400      4.4    664.5600   116.2800  0.0000  pooling_3
+pooling_1                           780.8400      4.4    664.5600   116.2800  0.0000  pooling_2
+pooling_2                           780.8400      4.4    664.5600   116.2800  0.0000  pooling_1
+pooling_3                           780.8400      4.4    664.5600   116.2800  0.0000  pooling_0
+--------------------------------  ----------  -------  ----------  ---------  ------  ----------------------
+Total                                                  15585.1201  2244.9600  0.0000
+
+1

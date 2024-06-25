@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : design_1
+Version: O-2018.06-SP1
+Date   : Thu Dec 14 09:39:25 2023
+****************************************
+
+Operating Conditions: ss1p1v125c   Library: fsh0l_brs_generic_core_ss1p1v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: neuron_1/sum_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: neuron_1/tsum_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  design_1           enG50K                fsh0l_brs_generic_core_ss1p1v125c
+  neuron_2           G5K                   fsh0l_brs_generic_core_ss1p1v125c
+  neuron_2_DW01_add_0
+                     G5K                   fsh0l_brs_generic_core_ss1p1v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  neuron_1/sum_reg[1]/CK (QDFFNLBRMX0P4)                  0.00       0.00 r
+  neuron_1/sum_reg[1]/Q (QDFFNLBRMX0P4)                   0.39       0.39 f
+  neuron_1/U59/O (BUFLBRMX1)                              0.24       0.63 f
+  neuron_1/add_366/A[1] (neuron_2_DW01_add_0)             0.00       0.63 f
+  neuron_1/add_366/U35/O (OAI112LBRMX0P4)                 0.15       0.78 r
+  neuron_1/add_366/U34/O (AOI21B1ISLBRMX0P4)              0.20       0.98 r
+  neuron_1/add_366/U33/O (OAI12B2LBRMX0P4)                0.14       1.12 r
+  neuron_1/add_366/U32/O (OAI12LBRMX0P4)                  0.12       1.24 f
+  neuron_1/add_366/U31/O (OAI12LBRMX0P4)                  0.13       1.37 r
+  neuron_1/add_366/U30/O (AOI21B1ISLBRMX0P4)              0.20       1.57 r
+  neuron_1/add_366/U29/O (OAI12B2LBRMX0P4)                0.14       1.71 r
+  neuron_1/add_366/U28/O (OAI12LBRMX0P4)                  0.12       1.83 f
+  neuron_1/add_366/U27/O (OAI12LBRMX0P4)                  0.13       1.96 r
+  neuron_1/add_366/U26/O (AOI21B1ISLBRMX0P4)              0.20       2.16 r
+  neuron_1/add_366/U25/O (OAI12B2LBRMX0P4)                0.14       2.30 r
+  neuron_1/add_366/U24/O (OAI12LBRMX0P4)                  0.12       2.42 f
+  neuron_1/add_366/U23/O (OAI12LBRMX0P4)                  0.13       2.55 r
+  neuron_1/add_366/U22/O (AOI21B1ISLBRMX0P4)              0.20       2.75 r
+  neuron_1/add_366/U21/O (OAI12B2LBRMX0P4)                0.14       2.89 r
+  neuron_1/add_366/U20/O (OAI12LBRMX0P4)                  0.12       3.01 f
+  neuron_1/add_366/U19/O (OAI12LBRMX0P4)                  0.13       3.14 r
+  neuron_1/add_366/U18/O (AOI21B1ISLBRMX0P4)              0.20       3.34 r
+  neuron_1/add_366/U17/O (OAI12B2LBRMX0P4)                0.14       3.48 r
+  neuron_1/add_366/U16/O (OAI12LBRMX0P4)                  0.12       3.60 f
+  neuron_1/add_366/U15/O (OAI12LBRMX0P4)                  0.13       3.73 r
+  neuron_1/add_366/U14/O (AOI21B1ISLBRMX0P4)              0.20       3.93 r
+  neuron_1/add_366/U13/O (OAI12B2LBRMX0P4)                0.14       4.07 r
+  neuron_1/add_366/U12/O (OAI12LBRMX0P4)                  0.12       4.19 f
+  neuron_1/add_366/U11/O (OAI12LBRMX0P4)                  0.13       4.32 r
+  neuron_1/add_366/U10/O (AOI21B1ISLBRMX0P4)              0.20       4.52 r
+  neuron_1/add_366/U9/O (OAI12B2LBRMX0P4)                 0.14       4.66 r
+  neuron_1/add_366/U8/O (OAI12LBRMX0P4)                   0.11       4.76 f
+  neuron_1/add_366/U1_15/O (XOR3LBRMX1)                   0.12       4.88 r
+  neuron_1/add_366/SUM[15] (neuron_2_DW01_add_0)          0.00       4.88 r
+  neuron_1/U11/O (AO22LBRMX0P4)                           0.10       4.98 r
+  neuron_1/tsum_reg[15]/D (QDFCLRBNLBRMX0P4)              0.00       4.98 r
+  data arrival time                                                  4.98
+
+  clock clk (rise edge)                                  62.50      62.50
+  clock network delay (ideal)                             0.00      62.50
+  clock uncertainty                                       0.00      62.50
+  neuron_1/tsum_reg[15]/CK (QDFCLRBNLBRMX0P4)             0.00      62.50 r
+  library setup time                                     -0.20      62.30
+  data required time                                                62.30
+  --------------------------------------------------------------------------
+  data required time                                                62.30
+  data arrival time                                                 -4.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                       57.32
+
+
+1
