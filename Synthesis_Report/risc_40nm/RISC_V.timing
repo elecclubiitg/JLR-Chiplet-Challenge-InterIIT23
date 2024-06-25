@@ -1,0 +1,152 @@
+Warning: Design 'RISC_V' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V
+Version: O-2018.06-SP1
+Date   : Sun Dec 10 23:51:38 2023
+****************************************
+
+Operating Conditions: ss1p1v125c   Library: fsh0l_brs_generic_core_ss1p1v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: msrv32_csr_file_0/MC/mcycle_out_reg[63]
+            (rising edge-triggered flip-flop clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V             enG50K                fsh0l_brs_generic_core_ss1p1v125c
+  msrv32_csr_file    G10K                  fsh0l_brs_generic_core_ss1p1v125c
+  csr_data_mux_unit  G5K                   fsh0l_brs_generic_core_ss1p1v125c
+  data_wr_mux_unit   G5K                   fsh0l_brs_generic_core_ss1p1v125c
+  machine_counter_DW01_inc_2
+                     G5K                   fsh0l_brs_generic_core_ss1p1v125c
+  machine_counter    G5K                   fsh0l_brs_generic_core_ss1p1v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]/CK (QDFENLBRMX0P4)
+                                                          0.00       0.00 r
+  reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]/Q (QDFENLBRMX0P4)
+                                                          0.18       0.18 r
+  reg_block_2_revised_2_0/csr_addr_reg_out[8] (reg_block_2_revised_2)
+                                                          0.00       0.18 r
+  msrv32_csr_file_0/csr_addr_in[8] (msrv32_csr_file)      0.00       0.18 r
+  msrv32_csr_file_0/U13/O (BUFLBRMX1)                     0.18       0.36 r
+  msrv32_csr_file_0/CDMU/csr_addr_in[8] (csr_data_mux_unit)
+                                                          0.00       0.36 r
+  msrv32_csr_file_0/CDMU/U39/O (INVLBRMX1)                0.08       0.44 f
+  msrv32_csr_file_0/CDMU/U28/O (NR3LBRMX1)                0.14       0.57 r
+  msrv32_csr_file_0/CDMU/U32/O (AN2B1LBRMX1)              0.19       0.77 r
+  msrv32_csr_file_0/CDMU/U24/O (AN3B2LBRMX1)              0.22       0.99 r
+  msrv32_csr_file_0/CDMU/U33/O (AN3LBRMX1)                0.17       1.16 r
+  msrv32_csr_file_0/CDMU/U9/O (AN2B1LBRMX1)               0.67       1.83 r
+  msrv32_csr_file_0/CDMU/U2/O (BUFLBRMX0P4)               0.64       2.46 r
+  msrv32_csr_file_0/CDMU/U94/O (AOI22LBRMX1)              0.14       2.60 f
+  msrv32_csr_file_0/CDMU/U61/O (ND4LBRMX1)                0.07       2.67 r
+  msrv32_csr_file_0/CDMU/U59/O (OA12LBRMX1)               0.11       2.78 r
+  msrv32_csr_file_0/CDMU/csr_data_out[3] (csr_data_mux_unit)
+                                                          0.00       2.78 r
+  msrv32_csr_file_0/DRMU/csr_data_out_in[3] (data_wr_mux_unit)
+                                                          0.00       2.78 r
+  msrv32_csr_file_0/DRMU/U45/O (AOAI112LBRMX1)            0.08       2.86 f
+  msrv32_csr_file_0/DRMU/U1/O (OAI12LBRMX1)               0.33       3.19 r
+  msrv32_csr_file_0/DRMU/data_wr_out[3] (data_wr_mux_unit)
+                                                          0.00       3.19 r
+  msrv32_csr_file_0/MC/data_wr_in[3] (machine_counter)
+                                                          0.00       3.19 r
+  msrv32_csr_file_0/MC/add_1376/A[3] (machine_counter_DW01_inc_2)
+                                                          0.00       3.19 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_3/C (HA1LBRMX1)      0.26       3.44 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_4/C (HA1LBRMX1)      0.10       3.55 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_5/C (HA1LBRMX1)      0.10       3.65 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_6/C (HA1LBRMX1)      0.10       3.75 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_7/C (HA1LBRMX1)      0.10       3.86 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_8/C (HA1LBRMX1)      0.10       3.96 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_9/C (HA1LBRMX1)      0.10       4.06 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_10/C (HA1LBRMX1)     0.10       4.17 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_11/C (HA1LBRMX1)     0.10       4.27 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_12/C (HA1LBRMX1)     0.10       4.37 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_13/C (HA1LBRMX1)     0.10       4.47 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_14/C (HA1LBRMX1)     0.10       4.58 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_15/C (HA1LBRMX1)     0.10       4.68 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_16/C (HA1LBRMX1)     0.10       4.78 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_17/C (HA1LBRMX1)     0.10       4.89 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_18/C (HA1LBRMX1)     0.10       4.99 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_19/C (HA1LBRMX1)     0.10       5.09 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_20/C (HA1LBRMX1)     0.10       5.19 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_21/C (HA1LBRMX1)     0.10       5.30 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_22/C (HA1LBRMX1)     0.10       5.40 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_23/C (HA1LBRMX1)     0.10       5.50 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_24/C (HA1LBRMX1)     0.10       5.61 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_25/C (HA1LBRMX1)     0.10       5.71 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_26/C (HA1LBRMX1)     0.10       5.81 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_27/C (HA1LBRMX1)     0.10       5.91 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_28/C (HA1LBRMX1)     0.10       6.02 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_29/C (HA1LBRMX1)     0.10       6.12 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_30/C (HA1LBRMX1)     0.10       6.22 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_31/C (HA1LBRMX1)     0.10       6.32 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_32/C (HA1LBRMX1)     0.10       6.43 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_33/C (HA1LBRMX1)     0.10       6.52 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_34/C (HA1LBRMX1)     0.10       6.62 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_35/C (HA1LBRMX1)     0.10       6.71 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_36/C (HA1LBRMX1)     0.10       6.81 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_37/C (HA1LBRMX1)     0.10       6.91 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_38/C (HA1LBRMX1)     0.10       7.00 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_39/C (HA1LBRMX1)     0.10       7.10 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_40/C (HA1LBRMX1)     0.10       7.19 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_41/C (HA1LBRMX1)     0.10       7.29 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_42/C (HA1LBRMX1)     0.10       7.38 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_43/C (HA1LBRMX1)     0.10       7.48 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_44/C (HA1LBRMX1)     0.10       7.58 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_45/C (HA1LBRMX1)     0.10       7.67 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_46/C (HA1LBRMX1)     0.10       7.77 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_47/C (HA1LBRMX1)     0.10       7.86 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_48/C (HA1LBRMX1)     0.10       7.96 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_49/C (HA1LBRMX1)     0.10       8.05 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_50/C (HA1LBRMX1)     0.10       8.15 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_51/C (HA1LBRMX1)     0.10       8.25 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_52/C (HA1LBRMX1)     0.10       8.34 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_53/C (HA1LBRMX1)     0.10       8.44 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_54/C (HA1LBRMX1)     0.10       8.53 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_55/C (HA1LBRMX1)     0.10       8.63 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_56/C (HA1LBRMX1)     0.10       8.72 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_57/C (HA1LBRMX1)     0.10       8.82 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_58/C (HA1LBRMX1)     0.10       8.92 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_59/C (HA1LBRMX1)     0.10       9.01 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_60/C (HA1LBRMX1)     0.10       9.11 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_61/C (HA1LBRMX1)     0.10       9.20 r
+  msrv32_csr_file_0/MC/add_1376/U1_1_62/C (HA1LBRMX1)     0.09       9.29 r
+  msrv32_csr_file_0/MC/add_1376/U1/O (XOR2LBRMX0P4)       0.07       9.37 f
+  msrv32_csr_file_0/MC/add_1376/SUM[63] (machine_counter_DW01_inc_2)
+                                                          0.00       9.37 f
+  msrv32_csr_file_0/MC/U54/O (AOI222LBRMX0P4)             0.17       9.54 r
+  msrv32_csr_file_0/MC/U52/O (ND2LBRMX1)                  0.08       9.62 f
+  msrv32_csr_file_0/MC/mcycle_out_reg[63]/D (QDFFNLBRMX0P4)
+                                                          0.00       9.62 f
+  data arrival time                                                  9.62
+
+  clock CLOCK (rise edge)                                62.50      62.50
+  clock network delay (ideal)                             0.00      62.50
+  clock uncertainty                                       0.00      62.50
+  msrv32_csr_file_0/MC/mcycle_out_reg[63]/CK (QDFFNLBRMX0P4)
+                                                          0.00      62.50 r
+  library setup time                                     -0.04      62.46
+  data required time                                                62.46
+  --------------------------------------------------------------------------
+  data required time                                                62.46
+  data arrival time                                                 -9.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                       52.84
+
+
+1

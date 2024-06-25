@@ -1,0 +1,150 @@
+Warning: Design 'RISC_V' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V
+Version: O-2018.06-SP1
+Date   : Mon Dec 11 00:01:22 2023
+****************************************
+
+Operating Conditions: WCCOM   Library: fsd0j_a_generic_core_ss0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: msrv32_csr_file_0/MC/minstret_out_reg[63]
+            (rising edge-triggered flip-flop clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V             enG50K                fsd0j_a_generic_core_ss0p9v125c
+  msrv32_csr_file    enG10K                fsd0j_a_generic_core_ss0p9v125c
+  csr_data_mux_unit  enG5K                 fsd0j_a_generic_core_ss0p9v125c
+  machine_counter_DW01_add_1
+                     enG5K                 fsd0j_a_generic_core_ss0p9v125c
+  machine_counter    enG5K                 fsd0j_a_generic_core_ss0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]/CK (QDFEHLX1)
+                                                          0.00       0.00 r
+  reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]/Q (QDFEHLX1)
+                                                          0.76       0.76 r
+  reg_block_2_revised_2_0/csr_addr_reg_out[8] (reg_block_2_revised_2)
+                                                          0.00       0.76 r
+  msrv32_csr_file_0/csr_addr_in[8] (msrv32_csr_file)      0.00       0.76 r
+  msrv32_csr_file_0/U5/O (BUFHLX1)                        0.77       1.54 r
+  msrv32_csr_file_0/CDMU/csr_addr_in[8] (csr_data_mux_unit)
+                                                          0.00       1.54 r
+  msrv32_csr_file_0/CDMU/U25/O (AN3B1HLXLP)               1.15       2.69 r
+  msrv32_csr_file_0/CDMU/U24/O (AN2B1HLXLP)               1.14       3.83 r
+  msrv32_csr_file_0/CDMU/U23/O (OR3B2HLX1)                0.89       4.72 f
+  msrv32_csr_file_0/CDMU/U32/O (AN4B1HLX1)                3.09       7.80 r
+  msrv32_csr_file_0/CDMU/U50/O (AOI22HLX1)                1.95       9.76 f
+  msrv32_csr_file_0/CDMU/U44/O (AN4B1HLX1)                0.62      10.38 f
+  msrv32_csr_file_0/CDMU/U41/O (AOI13HLX1)                0.48      10.85 r
+  msrv32_csr_file_0/CDMU/csr_data_out[0] (csr_data_mux_unit)
+                                                          0.00      10.85 r
+  msrv32_csr_file_0/DRMU/csr_data_out_in[0] (data_wr_mux_unit)
+                                                          0.00      10.85 r
+  msrv32_csr_file_0/DRMU/U12/O (MOAI1HLX1)                2.04      12.90 r
+  msrv32_csr_file_0/DRMU/data_wr_out[0] (data_wr_mux_unit)
+                                                          0.00      12.90 r
+  msrv32_csr_file_0/MC/data_wr_in[0] (machine_counter)
+                                                          0.00      12.90 r
+  msrv32_csr_file_0/MC/add_1397/A[0] (machine_counter_DW01_add_1)
+                                                          0.00      12.90 r
+  msrv32_csr_file_0/MC/add_1397/U65/O (AN2HLX1)           1.56      14.46 r
+  msrv32_csr_file_0/MC/add_1397/U30/O (AN2HLX1)           0.46      14.91 r
+  msrv32_csr_file_0/MC/add_1397/U3/O (AN2HLX1)            0.46      15.38 r
+  msrv32_csr_file_0/MC/add_1397/U1/O (AN2HLX1)            0.47      15.84 r
+  msrv32_csr_file_0/MC/add_1397/U5/O (AN2HLX1)            0.47      16.32 r
+  msrv32_csr_file_0/MC/add_1397/U6/O (AN2HLX1)            0.47      16.78 r
+  msrv32_csr_file_0/MC/add_1397/U7/O (AN2HLX1)            0.47      17.25 r
+  msrv32_csr_file_0/MC/add_1397/U2/O (AN2HLX1)            0.47      17.72 r
+  msrv32_csr_file_0/MC/add_1397/U8/O (AN2HLX1)            0.47      18.19 r
+  msrv32_csr_file_0/MC/add_1397/U9/O (AN2HLX1)            0.47      18.66 r
+  msrv32_csr_file_0/MC/add_1397/U10/O (AN2HLX1)           0.47      19.12 r
+  msrv32_csr_file_0/MC/add_1397/U4/O (AN2HLX1)            0.47      19.59 r
+  msrv32_csr_file_0/MC/add_1397/U11/O (AN2HLX1)           0.47      20.06 r
+  msrv32_csr_file_0/MC/add_1397/U12/O (AN2HLX1)           0.47      20.52 r
+  msrv32_csr_file_0/MC/add_1397/U13/O (AN2HLX1)           0.47      20.99 r
+  msrv32_csr_file_0/MC/add_1397/U14/O (AN2HLX1)           0.47      21.46 r
+  msrv32_csr_file_0/MC/add_1397/U15/O (AN2HLX1)           0.47      21.92 r
+  msrv32_csr_file_0/MC/add_1397/U16/O (AN2HLX1)           0.47      22.39 r
+  msrv32_csr_file_0/MC/add_1397/U17/O (AN2HLX1)           0.47      22.85 r
+  msrv32_csr_file_0/MC/add_1397/U18/O (AN2HLX1)           0.47      23.32 r
+  msrv32_csr_file_0/MC/add_1397/U19/O (AN2HLX1)           0.47      23.79 r
+  msrv32_csr_file_0/MC/add_1397/U20/O (AN2HLX1)           0.47      24.25 r
+  msrv32_csr_file_0/MC/add_1397/U21/O (AN2HLX1)           0.47      24.72 r
+  msrv32_csr_file_0/MC/add_1397/U22/O (AN2HLX1)           0.47      25.19 r
+  msrv32_csr_file_0/MC/add_1397/U23/O (AN2HLX1)           0.47      25.65 r
+  msrv32_csr_file_0/MC/add_1397/U24/O (AN2HLX1)           0.47      26.12 r
+  msrv32_csr_file_0/MC/add_1397/U25/O (AN2HLX1)           0.47      26.59 r
+  msrv32_csr_file_0/MC/add_1397/U26/O (AN2HLX1)           0.47      27.05 r
+  msrv32_csr_file_0/MC/add_1397/U27/O (AN2HLX1)           0.47      27.52 r
+  msrv32_csr_file_0/MC/add_1397/U28/O (AN2HLX1)           0.47      27.99 r
+  msrv32_csr_file_0/MC/add_1397/U29/O (AN2HLX1)           0.47      28.45 r
+  msrv32_csr_file_0/MC/add_1397/U31/O (AN2HLX1)           0.47      28.92 r
+  msrv32_csr_file_0/MC/add_1397/U67/O (AN2HLX1)           0.46      29.39 r
+  msrv32_csr_file_0/MC/add_1397/U68/O (AN2HLX1)           0.43      29.82 r
+  msrv32_csr_file_0/MC/add_1397/U69/O (AN2HLX1)           0.43      30.26 r
+  msrv32_csr_file_0/MC/add_1397/U70/O (AN2HLX1)           0.43      30.69 r
+  msrv32_csr_file_0/MC/add_1397/U71/O (AN2HLX1)           0.43      31.13 r
+  msrv32_csr_file_0/MC/add_1397/U72/O (AN2HLX1)           0.43      31.56 r
+  msrv32_csr_file_0/MC/add_1397/U73/O (AN2HLX1)           0.43      32.00 r
+  msrv32_csr_file_0/MC/add_1397/U74/O (AN2HLX1)           0.43      32.43 r
+  msrv32_csr_file_0/MC/add_1397/U75/O (AN2HLX1)           0.43      32.87 r
+  msrv32_csr_file_0/MC/add_1397/U66/O (AN2HLX1)           0.43      33.30 r
+  msrv32_csr_file_0/MC/add_1397/U76/O (AN2HLX1)           0.43      33.74 r
+  msrv32_csr_file_0/MC/add_1397/U77/O (AN2HLX1)           0.43      34.17 r
+  msrv32_csr_file_0/MC/add_1397/U78/O (AN2HLX1)           0.43      34.61 r
+  msrv32_csr_file_0/MC/add_1397/U79/O (AN2HLX1)           0.43      35.04 r
+  msrv32_csr_file_0/MC/add_1397/U80/O (AN2HLX1)           0.43      35.48 r
+  msrv32_csr_file_0/MC/add_1397/U81/O (AN2HLX1)           0.43      35.91 r
+  msrv32_csr_file_0/MC/add_1397/U82/O (AN2HLX1)           0.43      36.35 r
+  msrv32_csr_file_0/MC/add_1397/U83/O (AN2HLX1)           0.43      36.78 r
+  msrv32_csr_file_0/MC/add_1397/U84/O (AN2HLX1)           0.43      37.22 r
+  msrv32_csr_file_0/MC/add_1397/U85/O (AN2HLX1)           0.43      37.65 r
+  msrv32_csr_file_0/MC/add_1397/U86/O (AN2HLX1)           0.43      38.09 r
+  msrv32_csr_file_0/MC/add_1397/U87/O (AN2HLX1)           0.43      38.52 r
+  msrv32_csr_file_0/MC/add_1397/U88/O (AN2HLX1)           0.43      38.96 r
+  msrv32_csr_file_0/MC/add_1397/U89/O (AN2HLX1)           0.43      39.39 r
+  msrv32_csr_file_0/MC/add_1397/U90/O (AN2HLX1)           0.43      39.83 r
+  msrv32_csr_file_0/MC/add_1397/U91/O (AN2HLX1)           0.43      40.26 r
+  msrv32_csr_file_0/MC/add_1397/U92/O (AN2HLX1)           0.43      40.70 r
+  msrv32_csr_file_0/MC/add_1397/U93/O (AN2HLX1)           0.43      41.13 r
+  msrv32_csr_file_0/MC/add_1397/U94/O (AN2HLX1)           0.43      41.57 r
+  msrv32_csr_file_0/MC/add_1397/U95/O (AN2HLX1)           0.44      42.01 r
+  msrv32_csr_file_0/MC/add_1397/U64/O (ND2HLX1)           0.26      42.27 f
+  msrv32_csr_file_0/MC/add_1397/U63/O (XNR2HLX1)          0.35      42.62 f
+  msrv32_csr_file_0/MC/add_1397/SUM[63] (machine_counter_DW01_add_1)
+                                                          0.00      42.62 f
+  msrv32_csr_file_0/MC/U50/O (AOI22HLX1)                  0.38      43.00 r
+  msrv32_csr_file_0/MC/U48/O (ND2HLX1)                    0.47      43.46 f
+  msrv32_csr_file_0/MC/minstret_out_reg[63]/D (QDFFHLX1)
+                                                          0.00      43.46 f
+  data arrival time                                                 43.46
+
+  clock CLOCK (rise edge)                                62.50      62.50
+  clock network delay (ideal)                             0.00      62.50
+  clock uncertainty                                       0.00      62.50
+  msrv32_csr_file_0/MC/minstret_out_reg[63]/CK (QDFFHLX1)
+                                                          0.00      62.50 r
+  library setup time                                     -0.63      61.87
+  data required time                                                61.87
+  --------------------------------------------------------------------------
+  data required time                                                61.87
+  data arrival time                                                -43.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.40
+
+
+1

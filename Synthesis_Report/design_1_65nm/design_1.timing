@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : design_1
+Version: O-2018.06-SP1
+Date   : Thu Dec 14 09:42:52 2023
+****************************************
+
+Operating Conditions: uk65lscllmvbbr_108c125_wc   Library: uk65lscllmvbbr_108c125_wc
+Wire Load Model Mode: top
+
+  Startpoint: n_in_1[1] (input port clocked by clk)
+  Endpoint: neuron_0/t_reg[21]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  design_1           wl0                   uk65lscllmvbbr_108c125_wc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  n_in_1[1] (in)                                          0.00       0.00 r
+  neuron_0/n_in[1] (neuron_3)                             0.00       0.00 r
+  neuron_0/mult_357/a[1] (neuron_3_DW_mult_uns_0)         0.00       0.00 r
+  neuron_0/mult_357/U537/Z (CKXOR2M1RA)                   0.18       0.18 f
+  neuron_0/mult_357/U427/Z (INVM2R)                       0.18       0.36 r
+  neuron_0/mult_357/U432/Z (ND2M2R)                       0.23       0.59 f
+  neuron_0/mult_357/U505/Z (OAI22M1R)                     0.16       0.75 r
+  neuron_0/mult_357/U148/S (ADHM1RA)                      0.16       0.91 f
+  neuron_0/mult_357/U429/Z (INVM2R)                       0.04       0.95 r
+  neuron_0/mult_357/U473/Z (OAI222M1RA)                   0.12       1.08 f
+  neuron_0/mult_357/U424/Z (MAO222M1RA)                   0.23       1.31 f
+  neuron_0/mult_357/U472/Z (AO222M1RA)                    0.28       1.58 f
+  neuron_0/mult_357/U425/Z (MAO222M1RA)                   0.22       1.81 f
+  neuron_0/mult_357/U58/CO (ADFM2RA)                      0.15       1.96 f
+  neuron_0/mult_357/U57/CO (ADFM2RA)                      0.13       2.09 f
+  neuron_0/mult_357/U56/CO (ADFM2RA)                      0.13       2.23 f
+  neuron_0/mult_357/U55/CO (ADFM2RA)                      0.13       2.36 f
+  neuron_0/mult_357/U54/CO (ADFM2RA)                      0.13       2.50 f
+  neuron_0/mult_357/U53/CO (ADFM2RA)                      0.13       2.63 f
+  neuron_0/mult_357/U52/CO (ADFM2RA)                      0.13       2.76 f
+  neuron_0/mult_357/U51/CO (ADFM2RA)                      0.13       2.90 f
+  neuron_0/mult_357/U50/CO (ADFM2RA)                      0.13       3.03 f
+  neuron_0/mult_357/U49/CO (ADFM2RA)                      0.13       3.17 f
+  neuron_0/mult_357/U48/CO (ADFM2RA)                      0.13       3.30 f
+  neuron_0/mult_357/U47/CO (ADFM2RA)                      0.13       3.44 f
+  neuron_0/mult_357/U46/CO (ADFM2RA)                      0.13       3.57 f
+  neuron_0/mult_357/U45/CO (ADFM2RA)                      0.13       3.70 f
+  neuron_0/mult_357/U459/Z (XOR4M1RA)                     0.21       3.91 f
+  neuron_0/mult_357/product[21] (neuron_3_DW_mult_uns_0)
+                                                          0.00       3.91 f
+  neuron_0/U50/Z (AO22M1RA)                               0.15       4.06 f
+  neuron_0/t_reg[21]/D (DFQM2RA)                          0.00       4.06 f
+  data arrival time                                                  4.06
+
+  clock clk (rise edge)                                  62.50      62.50
+  clock network delay (ideal)                             0.00      62.50
+  clock uncertainty                                       0.00      62.50
+  neuron_0/t_reg[21]/CK (DFQM2RA)                         0.00      62.50 r
+  library setup time                                     -0.01      62.49
+  data required time                                                62.49
+  --------------------------------------------------------------------------
+  data required time                                                62.49
+  data arrival time                                                 -4.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                       58.43
+
+
+1

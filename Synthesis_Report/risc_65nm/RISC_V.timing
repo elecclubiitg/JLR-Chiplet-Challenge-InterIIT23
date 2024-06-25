@@ -1,0 +1,146 @@
+Warning: Design 'RISC_V' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V
+Version: O-2018.06-SP1
+Date   : Sun Dec 10 23:44:46 2023
+****************************************
+
+Operating Conditions: uk65lscllmvbbr_108c125_wc   Library: uk65lscllmvbbr_108c125_wc
+Wire Load Model Mode: top
+
+  Startpoint: reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: msrv32_csr_file_0/MC/minstret_out_reg[63]
+            (rising edge-triggered flip-flop clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V             wl0                   uk65lscllmvbbr_108c125_wc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]/CK (DFEQM2RA)
+                                                          0.00       0.00 r
+  reg_block_2_revised_2_0/csr_addr_reg_out_reg[8]/Q (DFEQM2RA)
+                                                          0.22       0.22 r
+  reg_block_2_revised_2_0/csr_addr_reg_out[8] (reg_block_2_revised_2)
+                                                          0.00       0.22 r
+  msrv32_csr_file_0/csr_addr_in[8] (msrv32_csr_file)      0.00       0.22 r
+  msrv32_csr_file_0/CDMU/csr_addr_in[8] (csr_data_mux_unit)
+                                                          0.00       0.22 r
+  msrv32_csr_file_0/CDMU/U29/Z (INVM2R)                   0.06       0.28 f
+  msrv32_csr_file_0/CDMU/U15/Z (NR3M2R)                   0.13       0.41 r
+  msrv32_csr_file_0/CDMU/U28/Z (NR2B1M2R)                 0.16       0.56 r
+  msrv32_csr_file_0/CDMU/U17/Z (NR3B1M2R)                 0.19       0.76 r
+  msrv32_csr_file_0/CDMU/U16/Z (NR3B1M2R)                 0.22       0.98 r
+  msrv32_csr_file_0/CDMU/U4/Z (AN2M2R)                    0.39       1.37 r
+  msrv32_csr_file_0/CDMU/U27/Z (AOI22M2R)                 0.16       1.53 f
+  msrv32_csr_file_0/CDMU/U21/Z (AN4M2R)                   0.15       1.69 f
+  msrv32_csr_file_0/CDMU/U18/Z (AOI31M2R)                 0.09       1.78 r
+  msrv32_csr_file_0/CDMU/csr_data_out[0] (csr_data_mux_unit)
+                                                          0.00       1.78 r
+  msrv32_csr_file_0/DRMU/csr_data_out_in[0] (data_wr_mux_unit)
+                                                          0.00       1.78 r
+  msrv32_csr_file_0/DRMU/U1/Z (AO22M1RA)                  0.31       2.09 r
+  msrv32_csr_file_0/DRMU/data_wr_out[0] (data_wr_mux_unit)
+                                                          0.00       2.09 r
+  msrv32_csr_file_0/MC/data_wr_in[0] (machine_counter)
+                                                          0.00       2.09 r
+  msrv32_csr_file_0/MC/add_1397/A[0] (machine_counter_DW01_add_1)
+                                                          0.00       2.09 r
+  msrv32_csr_file_0/MC/add_1397/U34/Z (AN2M2R)            0.17       2.26 r
+  msrv32_csr_file_0/MC/add_1397/U30/Z (AN2M2R)            0.11       2.37 r
+  msrv32_csr_file_0/MC/add_1397/U7/Z (AN2M2R)             0.11       2.47 r
+  msrv32_csr_file_0/MC/add_1397/U4/Z (AN2M2R)             0.11       2.58 r
+  msrv32_csr_file_0/MC/add_1397/U1/Z (AN2M2R)             0.11       2.69 r
+  msrv32_csr_file_0/MC/add_1397/U2/Z (AN2M2R)             0.11       2.79 r
+  msrv32_csr_file_0/MC/add_1397/U3/Z (AN2M2R)             0.11       2.90 r
+  msrv32_csr_file_0/MC/add_1397/U5/Z (AN2M2R)             0.11       3.00 r
+  msrv32_csr_file_0/MC/add_1397/U8/Z (AN2M2R)             0.11       3.11 r
+  msrv32_csr_file_0/MC/add_1397/U9/Z (AN2M2R)             0.11       3.21 r
+  msrv32_csr_file_0/MC/add_1397/U10/Z (AN2M2R)            0.11       3.32 r
+  msrv32_csr_file_0/MC/add_1397/U6/Z (AN2M2R)             0.11       3.42 r
+  msrv32_csr_file_0/MC/add_1397/U11/Z (AN2M2R)            0.11       3.53 r
+  msrv32_csr_file_0/MC/add_1397/U12/Z (AN2M2R)            0.11       3.63 r
+  msrv32_csr_file_0/MC/add_1397/U13/Z (AN2M2R)            0.11       3.74 r
+  msrv32_csr_file_0/MC/add_1397/U14/Z (AN2M2R)            0.11       3.84 r
+  msrv32_csr_file_0/MC/add_1397/U15/Z (AN2M2R)            0.11       3.95 r
+  msrv32_csr_file_0/MC/add_1397/U16/Z (AN2M2R)            0.11       4.06 r
+  msrv32_csr_file_0/MC/add_1397/U17/Z (AN2M2R)            0.11       4.16 r
+  msrv32_csr_file_0/MC/add_1397/U18/Z (AN2M2R)            0.11       4.27 r
+  msrv32_csr_file_0/MC/add_1397/U19/Z (AN2M2R)            0.11       4.37 r
+  msrv32_csr_file_0/MC/add_1397/U20/Z (AN2M2R)            0.11       4.48 r
+  msrv32_csr_file_0/MC/add_1397/U21/Z (AN2M2R)            0.11       4.58 r
+  msrv32_csr_file_0/MC/add_1397/U22/Z (AN2M2R)            0.11       4.69 r
+  msrv32_csr_file_0/MC/add_1397/U23/Z (AN2M2R)            0.11       4.79 r
+  msrv32_csr_file_0/MC/add_1397/U24/Z (AN2M2R)            0.11       4.90 r
+  msrv32_csr_file_0/MC/add_1397/U25/Z (AN2M2R)            0.11       5.00 r
+  msrv32_csr_file_0/MC/add_1397/U26/Z (AN2M2R)            0.11       5.11 r
+  msrv32_csr_file_0/MC/add_1397/U27/Z (AN2M2R)            0.11       5.21 r
+  msrv32_csr_file_0/MC/add_1397/U28/Z (AN2M2R)            0.11       5.32 r
+  msrv32_csr_file_0/MC/add_1397/U29/Z (AN2M2R)            0.11       5.42 r
+  msrv32_csr_file_0/MC/add_1397/U31/Z (AN2M2R)            0.11       5.53 r
+  msrv32_csr_file_0/MC/add_1397/U35/Z (AN2M2R)            0.10       5.63 r
+  msrv32_csr_file_0/MC/add_1397/U36/Z (AN2M2R)            0.10       5.74 r
+  msrv32_csr_file_0/MC/add_1397/U37/Z (AN2M2R)            0.10       5.84 r
+  msrv32_csr_file_0/MC/add_1397/U38/Z (AN2M2R)            0.10       5.94 r
+  msrv32_csr_file_0/MC/add_1397/U39/Z (AN2M2R)            0.10       6.05 r
+  msrv32_csr_file_0/MC/add_1397/U40/Z (AN2M2R)            0.10       6.15 r
+  msrv32_csr_file_0/MC/add_1397/U41/Z (AN2M2R)            0.10       6.25 r
+  msrv32_csr_file_0/MC/add_1397/U42/Z (AN2M2R)            0.10       6.36 r
+  msrv32_csr_file_0/MC/add_1397/U43/Z (AN2M2R)            0.10       6.46 r
+  msrv32_csr_file_0/MC/add_1397/U44/Z (AN2M2R)            0.10       6.56 r
+  msrv32_csr_file_0/MC/add_1397/U45/Z (AN2M2R)            0.10       6.67 r
+  msrv32_csr_file_0/MC/add_1397/U46/Z (AN2M2R)            0.10       6.77 r
+  msrv32_csr_file_0/MC/add_1397/U47/Z (AN2M2R)            0.10       6.87 r
+  msrv32_csr_file_0/MC/add_1397/U48/Z (AN2M2R)            0.10       6.98 r
+  msrv32_csr_file_0/MC/add_1397/U49/Z (AN2M2R)            0.10       7.08 r
+  msrv32_csr_file_0/MC/add_1397/U50/Z (AN2M2R)            0.10       7.18 r
+  msrv32_csr_file_0/MC/add_1397/U51/Z (AN2M2R)            0.10       7.29 r
+  msrv32_csr_file_0/MC/add_1397/U52/Z (AN2M2R)            0.10       7.39 r
+  msrv32_csr_file_0/MC/add_1397/U53/Z (AN2M2R)            0.10       7.49 r
+  msrv32_csr_file_0/MC/add_1397/U54/Z (AN2M2R)            0.10       7.60 r
+  msrv32_csr_file_0/MC/add_1397/U55/Z (AN2M2R)            0.10       7.70 r
+  msrv32_csr_file_0/MC/add_1397/U56/Z (AN2M2R)            0.10       7.80 r
+  msrv32_csr_file_0/MC/add_1397/U57/Z (AN2M2R)            0.10       7.91 r
+  msrv32_csr_file_0/MC/add_1397/U58/Z (AN2M2R)            0.10       8.01 r
+  msrv32_csr_file_0/MC/add_1397/U59/Z (AN2M2R)            0.10       8.11 r
+  msrv32_csr_file_0/MC/add_1397/U60/Z (AN2M2R)            0.10       8.22 r
+  msrv32_csr_file_0/MC/add_1397/U61/Z (AN2M2R)            0.10       8.32 r
+  msrv32_csr_file_0/MC/add_1397/U62/Z (AN2M2R)            0.10       8.42 r
+  msrv32_csr_file_0/MC/add_1397/U63/Z (AN2M2R)            0.10       8.53 r
+  msrv32_csr_file_0/MC/add_1397/U64/Z (AN2M2R)            0.11       8.63 r
+  msrv32_csr_file_0/MC/add_1397/U33/Z (ND2M2R)            0.05       8.68 f
+  msrv32_csr_file_0/MC/add_1397/U32/Z (XNR2M2RA)          0.11       8.79 f
+  msrv32_csr_file_0/MC/add_1397/SUM[63] (machine_counter_DW01_add_1)
+                                                          0.00       8.79 f
+  msrv32_csr_file_0/MC/U170/Z (AO22M1RA)                  0.14       8.93 f
+  msrv32_csr_file_0/MC/U169/Z (AO221M1RA)                 0.24       9.16 f
+  msrv32_csr_file_0/MC/minstret_out_reg[63]/D (DFQM2RA)
+                                                          0.00       9.16 f
+  data arrival time                                                  9.16
+
+  clock CLOCK (rise edge)                                62.50      62.50
+  clock network delay (ideal)                             0.00      62.50
+  clock uncertainty                                       0.00      62.50
+  msrv32_csr_file_0/MC/minstret_out_reg[63]/CK (DFQM2RA)
+                                                          0.00      62.50 r
+  library setup time                                     -0.01      62.49
+  data required time                                                62.49
+  --------------------------------------------------------------------------
+  data required time                                                62.49
+  data arrival time                                                 -9.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                       53.33
+
+
+1

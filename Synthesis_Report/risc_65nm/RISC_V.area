@@ -1,0 +1,117 @@
+Information: Building the design 'integer_file'. (HDL-193)
+Error:  /home/birjit/dhruv/Inter_iit/risc_2/RISC_V.v:578: The statements in this 'always' block are outside the scope of the synthesis policy. Only an 'if' statement is allowed at the top level in this always block. (ELAB-302)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'integer_file'. (HDL-193)
+Information: Building the design 'machine_control'. (HDL-193)
+Error:  /home/birjit/dhruv/Inter_iit/risc_2/RISC_V.v:666: The statements in this 'always' block are outside the scope of the synthesis policy. Only an 'if' statement is allowed at the top level in this always block. (ELAB-302)
+Warning:  /home/birjit/dhruv/Inter_iit/risc_2/RISC_V.v:667: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /home/birjit/dhruv/Inter_iit/risc_2/RISC_V.v:717: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'machine_control'. (HDL-193)
+Warning: Unable to resolve reference 'integer_file' in 'RISC_V'. (LINK-5)
+Warning: Unable to resolve reference 'machine_control' in 'RISC_V'. (LINK-5)
+ 
+****************************************
+Report : area
+Design : RISC_V
+Version: O-2018.06-SP1
+Date   : Sun Dec 10 23:44:43 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    uk65lscllmvbbr_108c125_wc (File: /home/birjit/UMC65/UMK65LSCLLMVBBR_B03_TAPEOUTKIT/synopsys/uk65lscllmvbbr_108c125_wc.db)
+
+Number of ports:                         6089
+Number of nets:                         10620
+Number of cells:                         4840
+Number of combinational cells:           3787
+Number of sequential cells:               995
+Number of macros/black boxes:               0
+Number of buf/inv:                        673
+Number of references:                      26
+
+Combinational area:              10730.160149
+Buf/Inv area:                      797.760032
+Noncombinational area:            5668.920119
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 16399.080268
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ------------------------------------------------------
+RISC_V                            16399.0803    100.0      7.2000     0.0000  0.0000  RISC_V
+Branch_unit_0                       486.3600      3.0    331.2000     0.0000  0.0000  Branch_unit
+Branch_unit_0/sub_387               155.1600      0.9    155.1600     0.0000  0.0000  Branch_unit_DW01_sub_0
+alu_0                              2248.5600     13.7   1541.8800     0.0000  0.0000  alu
+alu_0/lt_422                        194.4000      1.2    194.4000     0.0000  0.0000  alu_DW_cmp_0
+alu_0/r307                          273.6000      1.7    273.6000     0.0000  0.0000  alu_DW01_sub_0
+alu_0/r308                          238.6800      1.5    238.6800     0.0000  0.0000  alu_DW01_add_0
+decoder_0                           101.1600      0.6    101.1600     0.0000  0.0000  decoder
+imm_generator_0                     124.2000      0.8    124.2000     0.0000  0.0000  imm_generator
+immediate_adder_0                   570.6000      3.5     93.2400     0.0000  0.0000  immediate_adder
+immediate_adder_0/add_536           238.6800      1.5    238.6800     0.0000  0.0000  immediate_adder_DW01_add_1
+immediate_adder_0/add_536_2         238.6800      1.5    238.6800     0.0000  0.0000  immediate_adder_DW01_add_0
+instruction_mux_0                   122.4000      0.7    122.4000     0.0000  0.0000  instruction_mux
+load_unit_0                         213.1200      1.3    213.1200     0.0000  0.0000  load_unit
+msrv32_csr_file_0                  8086.6801     49.3      3.6000     0.0000  0.0000  msrv32_csr_file
+msrv32_csr_file_0/CDMU              969.4800      5.9    969.4800     0.0000  0.0000  csr_data_mux_unit
+msrv32_csr_file_0/DRMU              165.9600      1.0    165.9600     0.0000  0.0000  data_wr_mux_unit
+msrv32_csr_file_0/MC               4612.6800     28.1   1092.2400  1336.3200  0.0000  machine_counter
+msrv32_csr_file_0/MC/add_1376       361.8000      2.2    361.8000     0.0000  0.0000  machine_counter_DW01_inc_2
+msrv32_csr_file_0/MC/add_1383       361.8000      2.2    361.8000     0.0000  0.0000  machine_counter_DW01_inc_1
+msrv32_csr_file_0/MC/add_1390       361.8000      2.2    361.8000     0.0000  0.0000  machine_counter_DW01_inc_0
+msrv32_csr_file_0/MC/add_1397       365.7600      2.2    365.7600     0.0000  0.0000  machine_counter_DW01_add_1
+msrv32_csr_file_0/MC/add_1404_aco   366.4800      2.2    366.4800     0.0000  0.0000  machine_counter_DW01_add_2
+msrv32_csr_file_0/MC/add_1411       366.4800      2.2    366.4800     0.0000  0.0000  machine_counter_DW01_add_0
+msrv32_csr_file_0/MCAUSE_REG        344.8800      2.1    126.0000   218.8800  0.0000  mcause_reg
+msrv32_csr_file_0/MCS                33.8400      0.2     20.1600    13.6800  0.0000  machine_counter_setup
+msrv32_csr_file_0/MIE_REG            79.2000      0.5     58.6800    20.5200  0.0000  mie_reg
+msrv32_csr_file_0/MIP_REG            58.3200      0.4     36.7200    21.6000  0.0000  mip_reg
+msrv32_csr_file_0/MM_REG            735.8400      4.5    298.0800   437.7600  0.0000  mepc_and_mscratch_reg
+msrv32_csr_file_0/MPD               108.3600      0.7    108.3600     0.0000  0.0000  misa_and_pre_data
+msrv32_csr_file_0/MS                 79.5600      0.5     65.8800    13.6800  0.0000  mstatus_reg
+msrv32_csr_file_0/MTVAL_REG         379.8000      2.3    160.9200   218.8800  0.0000  mtval_reg
+msrv32_csr_file_0/MTVEC_REG         515.1600      3.1    120.2400   218.8800  0.0000  mtvec_reg
+msrv32_csr_file_0/MTVEC_REG/add_1201_aco
+                                    176.0400      1.1    176.0400     0.0000  0.0000  mtvec_reg_DW01_add_0
+pc_0                                592.5600      3.6    424.4400     0.0000  0.0000  pc
+pc_0/r295                           168.1200      1.0    168.1200     0.0000  0.0000  pc_DW01_add_0
+reg_block_1_0                       312.1200      1.9      1.0800   311.0400  0.0000  reg_block_1
+reg_block_2_revised_2_0            2871.0001     17.5     13.3200  2857.6801  0.0000  reg_block_2_revised_2
+store_unit_0                        212.7600      1.3    212.7600     0.0000  0.0000  store_unit
+wb_mux_sel_unit_0                   417.2400      2.5    417.2400     0.0000  0.0000  wb_mux_sel_unit
+wr_en_generator_0                     4.3200      0.0      4.3200     0.0000  0.0000  wr_en_generator
+xlconstant_0                          2.1600      0.0      1.0800     0.0000  0.0000  RISC_V_xlconstant_0_0
+xlconstant_0/inst                     1.0800      0.0      1.0800     0.0000  0.0000  xlconstant_v1_1_6_xlconstant_00000001_1
+xlconstant_1                          2.1600      0.0      1.0800     0.0000  0.0000  RISC_V_xlconstant_0_1
+xlconstant_1/inst                     1.0800      0.0      1.0800     0.0000  0.0000  xlconstant_v1_1_6_xlconstant_00000000_1
+xlslice_0                             2.8800      0.0      0.0000     0.0000  0.0000  RISC_V_xlslice_0_0
+xlslice_0/inst                        2.8800      0.0      2.8800     0.0000  0.0000  xlslice_v1_0_2_xlslice_DIN_WIDTH3_DIN_FROM1_DIN_TO0
+xlslice_1                             7.2000      0.0      0.0000     0.0000  0.0000  RISC_V_xlslice_1_0
+xlslice_1/inst                        7.2000      0.0      7.2000     0.0000  0.0000  xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM6_DIN_TO2_1
+xlslice_2                             0.0000      0.0      0.0000     0.0000  0.0000  RISC_V_xlslice_2_0
+xlslice_2/inst                        0.0000      0.0      0.0000     0.0000  0.0000  xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM6_DIN_TO2_0
+xlslice_3                             7.2000      0.0      0.0000     0.0000  0.0000  RISC_V_xlslice_3_0
+xlslice_3/inst                        7.2000      0.0      7.2000     0.0000  0.0000  xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM4_DIN_TO0
+xlslice_4                             2.8800      0.0      0.0000     0.0000  0.0000  RISC_V_xlslice_4_0
+xlslice_4/inst                        2.8800      0.0      2.8800     0.0000  0.0000  xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM1_DIN_TO0_1
+xlslice_5                             2.8800      0.0      0.0000     0.0000  0.0000  RISC_V_xlslice_5_0
+xlslice_5/inst                        2.8800      0.0      2.8800     0.0000  0.0000  xlslice_v1_0_2_xlslice_DIN_WIDTH32_DIN_FROM1_DIN_TO0_0
+xlslice_6                             1.4400      0.0      0.0000     0.0000  0.0000  RISC_V_xlslice_6_1
+xlslice_6/inst                        1.4400      0.0      1.4400     0.0000  0.0000  xlslice_v1_0_2_xlslice_DIN_WIDTH7_DIN_FROM5_DIN_TO5
+--------------------------------  ----------  -------  ----------  ---------  ------  ------------------------------------------------------
+Total                                                  10730.1601  5668.9201  0.0000
+
+1
