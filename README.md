@@ -1,6 +1,8 @@
-# JLR Chiplet Challenge, Inter IIT 2023
+# JLR Chiplet Challenge, Inter IIT 12.0
 
-This is the official project repository for Inter IIT 2023's [JLR Chiplet Challenge Problem Statement](./PS_High_JLR.pdf) from Electronics Club, IIT Guwahati.
+![alt text](cover_image.png)
+
+This is the official project repository for Inter IIT 12.0's [JLR Chiplet Challenge Problem Statement](./PS_High_JLR.pdf) from Electronics Club, IIT Guwahati.
 
 ## Reports & Presentation
 
